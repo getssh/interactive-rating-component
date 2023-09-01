@@ -1,17 +1,20 @@
 {
+  "homepage": "http://getssh.github.io/interactive-rating-component",
   "name": "interactive-rating-component-main",
   "version": "1.0.0",
   "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css",
-    "watch": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
+    "watch": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch",
+    "deploy": "npm run build && gh-pages -d src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.15",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.27"
   },
   "devDependencies": {
